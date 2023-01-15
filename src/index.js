@@ -1,8 +1,3 @@
-function reverse(num) {
-    let result = num.toString();
-    result = result.split("");
-    result = result.reverse();
-    result = result.join("");
-
-    return +result;
-}
+module.exports = function reverse(n) {
+    return parseFloat(n.toString().split("").reverse().join(""));
+};
