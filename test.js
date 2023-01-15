@@ -1,8 +1,6 @@
 const assert = require("assert");
 
-function reverse(num) {
-    return parseFloat(num.toString().split("").reverse().join(""));
-}
+const reverse = require("./src");
 
 it("Should return 261 when 162 given", () => {
     const reversed = reverse(162);
